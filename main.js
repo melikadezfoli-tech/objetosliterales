@@ -66,4 +66,16 @@ const acelerar= coche.velocidadActual+10;
 console.log(acelerar);
 if (coche.velocidadActual>=0) {let frenar=coche.velocidadActual-10;console.log (frenar)};
 
+/*8. Contar propiedades
+Enunciado: Crea un objeto animal con al menos cinco propiedades. Luego, escribe una función 
+que cuente y devuelva el número de propiedades que tiene el objeto.*/
 
+const animal={tipo:'mamífero', origen:'Asia',color:'marrón',peso:240 , estatura:2.1};
+const totalPropi= Object.keys(animal).length;
+console.log(totalPropi);
+
+
+/*9. Objeto dentro de otro objeto
+Enunciado:Crea un objeto empresa que tenga las propiedades nombre y direccion. 
+La propiedad direccion debe ser otro objeto con calle, ciudad, y codigoPostal. 
+Luego, accede a las propiedades del objeto anidado e imprímelas.*/
